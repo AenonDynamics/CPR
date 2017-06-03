@@ -16,7 +16,7 @@ wget -O - https://packages.aenon-dynamics.com/static/pubkey.pgp | apt-key add -
 **1.2 Create /etc/apt/sources.list.d/aenon-dynamics.list**
 
 ```bash
-deb https://packages.aenon-dynamics.com/debian jessie main
+echo "deb https://packages.aenon-dynamics.com/debian stable main" > /etc/apt/sources.list.d/aenon-dynamics.list
 ```
 
 **1.3 Update your local indexes**
